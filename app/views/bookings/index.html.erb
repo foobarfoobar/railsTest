@@ -1,0 +1,11 @@
+<% @title = "Nonsens" %>
+<h2>Buchungen.......</h2>
+<ul>
+	<% unless @bookings.nil? %>
+	<% @bookings.each do |booking| %>
+	<li>
+		<%= link_to booking.name, booking.email %>
+	</li>
+	<% end %>
+	<% end %>
+</ul>
