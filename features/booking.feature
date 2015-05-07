@@ -16,3 +16,8 @@ Funktionalität: Buchung eines Railsair Fluges
     Und ich meine Personalien nicht eingebe
     Und ich bezahle
     Dann soll mir eine Fehlermeldung angezeigt werden
+    
+  Szenario: Das Buchen eines ausgebuchten Fluges soll nicht möglich sein
+    Gegeben sei ein Flug RA-448 von DUS nah LUX mit 0 freien Plätzen
+    Wenn ich den Flug RA-448 auswähle
+    Dann soll mir angezeigt werden, dass der Flug ausgebucht ist
