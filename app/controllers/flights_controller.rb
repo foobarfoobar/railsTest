@@ -2,6 +2,7 @@ class FlightsController < ApplicationController
   
   def index
     @flights = Flight.all
+    ConfirmationMailer.confirmation().deliver
   end
   
   def show
